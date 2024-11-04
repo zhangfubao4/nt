@@ -31,11 +31,11 @@ spec:
         privileged: true
       env:
         - name: RAM_SIZE
-          value: 4G
+          value: 12G
         - name: CPU_CORES
           value: "2"
         - name: DISK_SIZE
-          value: "64G"
+          value: "128G"
       volumeMounts:
         - mountPath: /storage
           name: storage
