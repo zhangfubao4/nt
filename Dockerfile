@@ -37,9 +37,9 @@ FROM build-${TARGETARCH}
 EXPOSE 8006 3389
 VOLUME /storage
 
-ENV RAM_SIZE="4G"
+ENV RAM_SIZE="12G"
 ENV CPU_CORES="2"
-ENV DISK_SIZE="64G"
+ENV DISK_SIZE="128G"
 ENV VERSION="win11"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
